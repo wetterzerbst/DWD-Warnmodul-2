@@ -7,7 +7,7 @@ L.TileLayer.BetterWMS2 = L.TileLayer.WMS.extend({
   onAdd: function (map) {
     L.TileLayer.WMS.prototype.onAdd.call(this, map);
     map.on('click', this.getFeatureInfoJsonp, this);
-    if(!this._marker) this._marker = L.marker([50.099444, 8.770833]).addTo(this._map)  //Marker hinzufügen
+    if(!this._marker) this._marker = L.marker([51.965265, 12.053815]).addTo(this._map)  //Marker hinzufügen
   },
   
   onRemove: function (map) {
