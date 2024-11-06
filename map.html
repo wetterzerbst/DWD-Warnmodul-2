@@ -56,7 +56,7 @@ Anregungen zur Nutzung oder beispielhafte Weiterentwicklungen nehmen wir gerne u
 		// Mittelpunkt der Karte als Breiten- und Längengrad, bspw. 50.0956° N, 8.7761° E für Offenbach
 		center: [51.965265, 12.053815],
 		// initiales Zoomlevel
-		zoom: 18, 
+		zoom: 7, 
 		// interaktivität der Karte kann mit Optionen gesteuert werden
 		zoomControl: true,
 		dragging: true,
@@ -66,7 +66,7 @@ Anregungen zur Nutzung oder beispielhafte Weiterentwicklungen nehmen wir gerne u
 	// OSM-Hintergrundslayer definieren
 	var osmlayer =  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		attribution: 'Map: &copy; <a href="https://openstreetmap.org">OSM</a>',
-		maxZoom: 7
+		maxZoom: 18
 	});
 
 	// Warnungs-Layer vom DWD-Geoserver - betterWms fügt Möglichkeiten zur GetFeatureInfo hinzu
