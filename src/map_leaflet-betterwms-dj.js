@@ -81,6 +81,7 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
     this._marker.closePopup();this._marker.unbindPopup(); this._marker.setLatLng(latlng)  //feedback
     if ( data.features[0] == null ) { return 0 };
     var content="<h2 style='opacity:.87'>Amtliche Warnung</h2>";
+    var content="<small style='opacity:.87'>Wetterstation Zerbst/Anhalt</small>";
     var color={Minor:"yellow",Moderate:"orange",Severe:"red",Extreme:"DarkRed"}  //
     data.features.sort(function(a, b){return new Date(a.properties.ONSET) - new Date(b.properties.ONSET)});  //sort array
     data.features.forEach(function(item){ item=item.properties  //$.each(data.features, function (i, item) {
