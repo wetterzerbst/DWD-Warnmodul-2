@@ -103,7 +103,7 @@ L.TileLayer.BetterWMS = L.TileLayer.WMS.extend({
         +"<div title='"+(item.PARAMATERVALUE||'')+"' style='position: absolute;top: 0px;left: 0px;width:56px;height:56px;background: no-repeat 12px 75%/32px url(\"icons/"+ec+".png\")'></div>"  //DESCRIPTION
         +"</div><p></p>";
     });
-    content += "<a target='dwd' href='https://www.dwd.de/warnungen'>dwd.de</a> "+new Date(data.features[0].properties.SENT).toLocaleTimeString('de',{hour:"2-digit",minute:"2-digit"});
+    content += "<a target='dwd' href='https://www.dwd.de/warnungen'>DWD</a> "+new Date(data.features[0].properties.SENT).toLocaleTimeString('de',{hour:"2-digit",minute:"2-digit"});
     if((Date.now()-new Date(data.features[0].properties.SENT))/3.6e6>48) content += " not up to date, try <a href='?7'>Landkreise</a>"  //
 
     this._marker.bindPopup(content,{ maxWidth: 400}).openPopup();  //L.popup({ maxWidth: 800}).setLatLng(latlng).setContent(content).openOn(this._map);
